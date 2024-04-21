@@ -1,0 +1,254 @@
+<form method="post" accept-charset="utf-8" class="form-inline findus" id="frmContact" action="https://nitra.ac.in/admission-query">
+    <div style="display:none;"><input type="hidden" name="_method" value="POST"></div>
+    <div class="row">
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Name of the Candidate: *</strong></label>
+                <!--<input type="text" class="form-control" name="name" required="">-->
+                <div class="form-group input text required"><input type="text" name="name" class="form-control"
+                        data-val="true" data-val-required="Please Enter Name" placeholder="Your Name*"
+                        required="required" maxlength="100" id="name"><span class="valid_error" data-valmsg-for="name"
+                        data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Father’s Name: *</strong></label>
+                <div class="form-group input text required"><input type="text" name="f_name" class="form-control"
+                        data-val="true" data-val-required="Please Enter Father Name" placeholder="Your Father Name*"
+                        required="required" maxlength="100" id="f-name"><span class="valid_error"
+                        data-valmsg-for="f_name" data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Date of Birth: *</strong></label>
+                <!--<input type="text" class="form-control" name="website" required="">-->
+                <div class="form-group input text required"><input type="text" name="dob"
+                        class="form-control date-picker" data-val="true" data-val-required="Please Enter Date of bith"
+                        placeholder="dd/mm/yyyy" required="required" maxlength="100" id="dob"><span class="valid_error"
+                        data-valmsg-for="dob" data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Gender: *</strong></label><br>
+                <label class="radio-inline"><input type="radio" name="gender" required="" value="Male">Male</label><br>
+                <label class="radio-inline"><input type="radio" name="gender" required="" value="Female">Female</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-12">
+            <label for="name"><strong>Complete Address: *</strong></label>
+            <div class="form-group input textarea required"><textarea name="address" class="form-control"
+                    data-val="true" data-val-required="Please Enter Complete Address" placeholder="Address"
+                    required="required" id="address" rows="5"></textarea><span class="valid_error"
+                    data-valmsg-for="address" data-valmsg-replace="true"></span></div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <label for="name"><strong>Branch Interested in: *</strong></label>
+
+                <div class="form-group input select required"><select name="department_id" class="form-control"
+                        required="required" id="department-id">
+                        <option value="">Select One</option>
+                        <option value="10">Textile Technology </option>
+                        <option value="11">Computer Science &amp; Engineering</option>
+                        <option value="4">CSE (Artificial Intelligence &amp; Machine Learning)</option>
+                    </select></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <label for="name"><strong>Mobile No.: *</strong></label>
+                <!--<input type="text" class="form-control" name="contact_no" required="">-->
+                <div class="form-group input tel required"><input type="tel" name="phone" class="form-control"
+                        data-val="true" data-val-required="Please Enter Mobile No." placeholder="Mobile No."
+                        required="required" maxlength="30" id="phone"><span class="valid_error" data-valmsg-for="phone"
+                        data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-4">
+            <div class="form-group">
+                <label for="name"><strong>Email address: *</strong></label>
+                <div class="form-group input email required"><input type="email" name="email" class="form-control"
+                        data-val="true" data-val-required="Please Enter email" placeholder="Email" required="required"
+                        maxlength="255" id="email"><span class="valid_error" data-valmsg-for="email"
+                        data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 form-margin-10">
+            <h3><strong>Academic Qualification:</strong></h3>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Aggregate Marks in 10<sup>th</sup> : *</strong></label>
+                <!--<input type="text" class="form-control" name="mark10" required="">-->
+                <div class="form-group input text required"><input type="text" name="tenth_aggregate_marks"
+                        class="form-control" data-val="true" data-val-required="Please Enter Aggregate Marks in 10th"
+                        placeholder="10th Marks" required="required" maxlength="50" id="tenth-aggregate-marks"><span
+                        class="valid_error" data-valmsg-for="tenth_aggregate_marks" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Year of Passing: *</strong></label>
+                <div class="form-group input select required"><select name="passing_yr_tenth" class="form-control"
+                        required="required" id="passing-yr-tenth">
+                        <option value="">Select One</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Marks (PCM) in 12<sup>th</sup>:</strong></label>
+                <div class="form-group input text"><input type="text" name="twelfth_aggregate_marks"
+                        class="form-control" data-val="true" data-val-required="Please Enter Marks (PCM) in 12th"
+                        placeholder="12th Marks" maxlength="50" id="twelfth-aggregate-marks"><span class="valid_error"
+                        data-valmsg-for="twelfth_aggregate_marks" data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Year of Passing:</strong></label>
+                <div class="form-group input select"><select name="passing_yr_twelfth" class="form-control"
+                        id="passing-yr-twelfth">
+                        <option value="">Select One</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Aggregate Marks in Diploma (if applicable):</strong></label>
+                <div class="form-group input text"><input type="text" name="diploma_aggregate_marks"
+                        class="form-control" data-val="true" data-val-required="Please Enter Aggregate Marks in Diploma"
+                        placeholder="Diploma Marks" maxlength="50" id="diploma-aggregate-marks"><span
+                        class="valid_error" data-valmsg-for="diploma_aggregate_marks" data-valmsg-replace="true"></span>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6">
+            <div class="form-group">
+                <label for="name"><strong>Year of Passing:</strong></label>
+                <div class="form-group input select"><select name="diploma_yr_tenth" class="form-control"
+                        id="diploma-yr-tenth">
+                        <option value="">Select One</option>
+                        <option value="2001">2001</option>
+                        <option value="2002">2002</option>
+                        <option value="2003">2003</option>
+                        <option value="2004">2004</option>
+                        <option value="2005">2005</option>
+                        <option value="2006">2006</option>
+                        <option value="2007">2007</option>
+                        <option value="2008">2008</option>
+                        <option value="2009">2009</option>
+                        <option value="2010">2010</option>
+                        <option value="2011">2011</option>
+                        <option value="2012">2012</option>
+                        <option value="2013">2013</option>
+                        <option value="2014">2014</option>
+                        <option value="2015">2015</option>
+                        <option value="2016">2016</option>
+                        <option value="2017">2017</option>
+                        <option value="2018">2018</option>
+                        <option value="2019">2019</option>
+                        <option value="2020">2020</option>
+                        <option value="2021">2021</option>
+                        <option value="2022">2022</option>
+                    </select></div>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 form-margin-10">
+            <div class="form-group">
+                <strong>Board from which you completed your schooling *:</strong><br>
+                <label class="radio-inline"><input type="radio" name="board" value="CBSE" required="">CBSE</label>
+                <label class="radio-inline"><input type="radio" name="board" value="ICSE" required="">ICSE</label>
+                <label class="radio-inline"><input type="radio" name="board" value="State Board" required="">State
+                    Board</label>
+            </div>
+        </div>
+
+        <div class="col-sm-12 col-md-12 form-margin-10">
+            <div class="form-group">
+                <strong>Do you have Gap after 12th *:</strong><br>
+                <label class="radio-inline"><input type="radio" name="gap_after_twelfth" value="Yes"
+                        required="">Yes</label>
+                <label class="radio-inline"><input type="radio" name="gap_after_twelfth" value="No"
+                        required="">No</label>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 form-margin-10">
+            <div class="form-group">
+                <label for="name"><strong>JEE(mains) Rank 2022 (if declared):</strong></label>
+                <div class="form-group input text"><input type="text" name="rank" class="form-control" data-val="true"
+                        data-val-required="Please Enter JEE(mains)/UPSEE Rank 2021(if declared)" placeholder="Rank"
+                        maxlength="50" id="rank"><span class="valid_error" data-valmsg-for="rank"
+                        data-valmsg-replace="true"></span></div>
+            </div>
+        </div>
+        <div class="col-sm-12 col-md-6 form-margin-10">
+            <div class="form-group">
+                <label for="name"><strong>Do you require Hostel Facility *</strong></label><br>
+                <label class="radio-inline"><input type="radio" name="is_hostel_facility" required=""
+                        value="1">Yes</label>
+                <label class="radio-inline"><input type="radio" name="is_hostel_facility" required=""
+                        value="0">No</label>
+            </div>
+        </div>
+
+        <div class="clearfix"></div>
+
+        <p><strong>*Mandatory fields</strong></p>
+
+
+        <div class="col-sm-12 col-md-12">
+            <button class="btn_common yellow border_radius" id="btn_submit">Submit</button>
+        </div>
+    </div>
+</form>

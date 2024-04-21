@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Player</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f0f0;
+            text-align: center;
+        }
+        h1 {
+            color: #333;
+            margin-top: 50px;
+        }
+        .video-container {
+            position: relative;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        video {
+            width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.2);
+        }
+        .custom-controls {
+            position: absolute;
+            bottom: 10px;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+        }
+        .custom-controls button {
+            background-color: transparent;
+            border: none;
+            color: #fff;
+            font-size: 16px;
+            cursor: pointer;
+            margin: 0 10px;
+        }
+        .custom-controls button:hover {
+            color: #ff4500;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to our Video Player</h1>
+    
+    <div class="video-container">
+        <video controls>
+            <source src="./shiv.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <div class="custom-controls">
+            <button onclick="playPause()">Play/Pause</button>
+            <button onclick="muteUnmute()">Mute/Unmute</button>
+        </div>
+    </div>
+    
+    <script>
+        function playPause() {
+            var video = document.querySelector('video');
+            if (video.paused) {
+                video.play();
+            } else {
+                video.pause();
+            }
+        }
+
+        function muteUnmute() {
+            var video = document.querySelector('video');
+            if (video.muted) {
+                video.muted = false;
+            } else {
+                video.muted = true;
+            }
+        }
+    </script>
+</body>
+</html>
